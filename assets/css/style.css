@@ -16,7 +16,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
+body.light {
+  
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+/*button tema dark/light*/
+#ligar {
+  display: flex;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #646464;
+  border-radius: 8px;
+  cursor: pointer;
+  height: max-content;
+  padding: 4px;
+  border-style: none;
+  justify-content: center;
+  align-items: center;
+  
+}
+#ligar img {
+  width: 25px;
+  filter: invert(1);
+}
+
 
 /* layout ---------------------------------------------------------------- */
 .container {
@@ -28,6 +55,10 @@ body {
   height: auto;
   padding: 16px;
   gap: 20px;
+}
+
+.container.light {
+  border: 1px solid #000000;
 }
 
 aside {
