@@ -29,16 +29,23 @@ body.light {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: #646464;
-  border-radius: 8px;
   cursor: pointer;
   height: max-content;
   padding: 4px;
-  border-style: none;
   justify-content: center;
   align-items: center;
-  
+  border: 1px solid #ffffff;
+  background: transparent;
+  outline: none;
+  border-radius: 10px;
+  transition: all 1s ease;
 }
+
+#ligar.light {
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
 #ligar img {
   width: 25px;
   filter: invert(1);
