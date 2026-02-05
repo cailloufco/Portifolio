@@ -1,8 +1,14 @@
+/* reset ------------------------------------------------------------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scrollbar-width: none;
+}
+
 body {
   height: 100vh;
   background-color: #0b0b0b;
@@ -11,10 +17,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* layout ---------------------------------------------------------------- */
 .container {
   display: flex;
-  margin: 0 auto;
-  padding: 20px;
   background-color: #2f2f2fcc;
   border: 1px solid #ffffff;
   border-radius: 15px;
@@ -23,6 +29,7 @@ body {
   padding: 16px;
   gap: 20px;
 }
+
 aside {
   width: 25%;
   display: flex;
@@ -32,11 +39,19 @@ aside {
   align-items: center;
 }
 
-/* Estilização da parte do nome , icone , e descrição*/
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+}
+
+/* aside  ----------------------------------------------------- */
 #imgIconeUser {
   width: 200px;
   border-radius: 50%;
 }
+
 aside h1 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -47,65 +62,68 @@ aside p {
   font-size: 14px;
   line-height: 1.5;
   text-align: justify;
-  
+  color: #d1d1d1;
 }
-.social img {
-  margin: 10px;
-    width: 28px;
-    opacity: 0.8;
-    transition:
-      opacity 0.2s ease,
-      transform 0.2s ease;
-  }.social a{
+
+.social a {
   text-decoration: none;
 }
 
-  .social a:hover img {
-    opacity: 1;
-    transform: translateY(-2px);
-  }
-/*-------------------------------------*/
-
-/* Estilização da parte do conteúdo principal */
-main {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 10px;
+.social img {
+  margin: 10px;
+  width: 37px;
+  opacity: 0.8;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
+
+.social a:hover img {
+  opacity: 1;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+/* main ------------------------------------------------------ */
 main h2 {
   margin-bottom: 10px;
   border-bottom: 1px solid #ffffff54;
   padding-bottom: 5px;
 }
-main ul {
+
+main p {
+  color: #d1d1d1;
+}
+
+.iconeShields {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
-main li {
+
+.iconeShields li {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-main ul li img {
+.iconeShields img {
   width: 40px;
   margin-right: 8px;
 }
+
+/* tipografia ------------------------------------------------------------ */
 .titulo {
   color: #ffffff;
 }
-p {
-  color: #d1d1d1;
-}
+
 .tituloSecao {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 1.2em;
   font-size: large;
   text-align: start;
 }
+
 .sobreMim {
   margin-top: 5px;
   margin-bottom: 15px;
@@ -114,15 +132,19 @@ p {
   text-align: start;
 }
 
+/* projetos --------------------------------------------------------------- */
 .projetos {
   display: flex;
   flex-direction: column;
   gap: 6px;
   text-align: center;
+  list-style-type: none;
 }
+
 .projetos p {
   color: #a9a9a9;
 }
+
 .projetos li {
   background-color: #3a3a3a;
   border: 1px solid #ffffff83;
@@ -130,13 +152,24 @@ p {
   padding: 5px;
   border-radius: 5px;
 }
+
 .projetos a {
   color: #7c9cff;
 }
+
 .projetos a:hover {
   color: #9fb5ff;
 }
+
 .projetos li:hover {
   transform: scale(1.01);
   box-shadow: 0 0 10px #7c9cff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease-in-out;
+}
+
+.social a:hover img {
+  opacity: 1;
+  transform: translateY(-2px);
 }

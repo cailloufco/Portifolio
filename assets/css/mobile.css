@@ -1,8 +1,11 @@
-@media (max-width: 962px) {
+@media (max-width: 700px) {
+  /* Mobile ---------------------------------------------------------------- */
   body {
-    margin: 20px;
+    margin: 5px 0 5px 0;
     height: auto;
   }
+
+  /* layout */
   .container {
     display: flex;
     flex-direction: column;
@@ -13,23 +16,41 @@
     border-right: none;
     text-align: center;
   }
+
+  main {
+    width: 100%;
+    padding: 1.25rem;
+  }
+
+  /* aside */
   aside img {
     width: 120px;
     margin: 0 auto;
     display: block;
   }
 
-  main {
-    width: 100%;
-    padding: 1.25rem;
+  #imgIconeUser {
+    width: 120px;
+    border-radius: 50%;
   }
+  .descricao {
+    width: 80%;
+    line-height: 1.2rem;
+    font-size: 1rem;
+  }
+
+  /* tipografia */
   h1 {
     font-size: 1.6rem;
   }
-  .projeto a {
+
+  /* projetos */
+  .projetos a {
     display: inline-block;
-    padding: 0.5rem 0;
+    padding: 0.5rem;
   }
+
+  /* social */
   .social {
     display: flex;
     justify-content: center;
@@ -39,14 +60,72 @@
 
   .social img {
     width: 37px;
-    opacity: 0.8;
-    transition:
-      opacity 0.2s ease,
-      transform 0.2s ease;
   }
 
-  .social a:hover img {
-    opacity: 1;
-    transform: translateY(-2px);
+  /* icones */
+  .iconeShields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .iconeShields img {
+    width: 37px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1023px) {
+  /* Tablet ---------------------------------------------------------------- */
+  body {
+    margin: 20px;
+    height: auto;
+  }
+
+  /* layout */
+  .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* tipografia */
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* aside */
+  aside {
+    width: 100%;
+    border-right: none;
+    text-align: center;
+  }
+
+  aside img {
+    width: 140px;
+    margin: 0 auto;
+    display: block;
+  }
+  .descricao {
+    width: 80%;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* social */
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .social img {
+    width: 50px;
+  }
+  /* icones */
+  .iconeShields {
+    justify-content: center;
+    gap: 10px;
   }
 }
