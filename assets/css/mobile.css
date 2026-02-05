@@ -27,8 +27,26 @@
     font-size: 1.6rem;
   }
   .projeto a {
-  display: inline-block;
-  padding: 0.5rem 0;
-}
+    display: inline-block;
+    padding: 0.5rem 0;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
 
+  .social img {
+    width: 37px;
+    opacity: 0.8;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .social a:hover img {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
 }

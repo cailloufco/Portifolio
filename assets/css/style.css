@@ -47,7 +47,23 @@ aside p {
   font-size: 14px;
   line-height: 1.5;
   text-align: justify;
+  
 }
+.social img {
+  margin: 10px;
+    width: 28px;
+    opacity: 0.8;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }.social a{
+  text-decoration: none;
+}
+
+  .social a:hover img {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
 /*-------------------------------------*/
 
 /* Estilização da parte do conteúdo principal */
@@ -119,4 +135,8 @@ p {
 }
 .projetos a:hover {
   color: #9fb5ff;
+}
+.projetos li:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px #7c9cff;
 }
