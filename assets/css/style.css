@@ -19,7 +19,6 @@ body {
   transition: all 0.3s ease;
 }
 body.light {
-  
   background-color: #ffffff;
   transition: all 0.3s ease;
 }
@@ -50,7 +49,6 @@ body.light {
   width: 25px;
   filter: invert(1);
 }
-
 
 /* layout ---------------------------------------------------------------- */
 .container {
@@ -177,6 +175,7 @@ main p {
   gap: 6px;
   text-align: center;
   list-style-type: none;
+  
 }
 
 .projetos p {
@@ -189,6 +188,7 @@ main p {
   width: fit-content;
   padding: 5px;
   border-radius: 5px;
+  max-width: 890px;
 }
 
 .projetos a {
